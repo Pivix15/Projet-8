@@ -1,0 +1,19 @@
+.footer {
+    background-color: $black;
+    margin-top: 50px;
+    height: 209px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    div {
+        text-align: center;
+        p {
+            margin-top: 29px;
+            font-size: 24px;
+            color: $white;
+        }
+    }
+}
