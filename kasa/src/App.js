@@ -1,10 +1,7 @@
 import '@/scss/style.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from '@/pages/Home';
-import APropos from '@/pages/APropos';
-import Layout from '@/pages/Layout';
+import { Layout, Home, APropos, Logements } from '@/pages'
 import Error from '@/_utils/Error'
-import Logements from '@/pages/Logements';
 
 
 function App() {
