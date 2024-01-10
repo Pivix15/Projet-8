@@ -1,0 +1,24 @@
+.error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 139px;
+    margin-top: 139px;
+    margin-bottom: 139px;
+    p {
+        color: $primair-color;
+    }
+    > p {
+        font-size: 288px;
+        font-weight: 700;
+        color: $primair-color;
+    }
+    > div p {
+        font-size: 36px;
+    }
+    div a {
+        font-size: 18px;
+        color: $primair-color;
+        text-decoration: underline;
+    }
+}
