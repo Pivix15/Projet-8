@@ -8,10 +8,8 @@
 .header {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 720px;
-  margin-top: 45px;
-  margin-bottom: 50px;
+  justify-content: space-between;
+  margin: 45px 100px 50px 100px;
 }
 
 .navbar ul {
