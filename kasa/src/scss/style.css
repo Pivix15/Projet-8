@@ -1,0 +1,29 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  text-decoration: none;
+  list-style: none;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 720px;
+  margin-top: 45px;
+  margin-bottom: 50px;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 57px;
+  font-size: 26px;
+  padding: 0;
+}
+.navbar ul a {
+  color: #FF6060;
+}
+
+.highlighted {
+  text-decoration: underline;
+}/*# sourceMappingURL=style.css.map */

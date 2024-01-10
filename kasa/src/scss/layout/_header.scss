@@ -1,0 +1,24 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 720px;
+    margin-top: 45px;
+    margin-bottom: 50px;
+}
+
+.navbar {
+    ul {
+        display: flex;
+        gap: 57px;
+        font-size: 26px;
+        padding: 0;
+        a {
+            color: $primair-color;
+        }
+    }
+}
+
+.highlighted {
+    text-decoration: underline;
+}
