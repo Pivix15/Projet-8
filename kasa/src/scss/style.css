@@ -26,4 +26,40 @@
 
 .highlighted {
   text-decoration: underline;
+}
+
+.hbanner {
+  display: flex;
+  justify-content: center;
+}
+.hbanner .banner {
+  width: 100%;
+  margin-left: 100px;
+  margin-right: 100px;
+  position: relative;
+}
+.hbanner .banner::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 25px;
+}
+.hbanner .banner__img1 {
+  width: 100%;
+  height: 223px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 25px;
+}
+.hbanner .banner__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+}
+.hbanner .banner__text p {
+  color: white;
 }/*# sourceMappingURL=style.css.map */
