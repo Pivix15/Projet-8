@@ -1,0 +1,15 @@
+.pbanner {
+    display: flex;
+    justify-content: center;
+    margin-top: 38px;
+    .banner {
+        @include banner;
+        position: relative;
+    }
+    .banner__img2 {
+        width: 100%;
+        height: 223px;
+        object-fit: cover;
+        border-radius: 25px;
+    }
+}
