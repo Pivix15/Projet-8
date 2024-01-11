@@ -2,14 +2,132 @@
     display: flex;
     justify-content: center;
     margin-top: 38px;
+
     .banner {
         @include banner;
         position: relative;
     }
+
     .banner__img2 {
         width: 100%;
         height: 223px;
         object-fit: cover;
         border-radius: 25px;
+    }
+}
+
+
+/* styles.scss */
+
+/* .faq {
+    margin: 0 auto;
+    width: 1023px;
+    margin-top: 38px;
+}
+
+.question {
+    margin-bottom: 30px;
+    overflow: hidden;
+
+    .question-header {
+        border-radius: 5px;
+        background-color: $primair-color;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+        z-index: 2;
+        h3 {
+            color: white;
+            padding: 10px 15px 10px 15px;
+            font-size: 24px;
+            font-weight: 500;
+        }
+        span {
+            padding-right: 15px;
+        }
+    }
+
+    .answer {
+        transition: opacity 1.4s ease;
+        opacity: 1;
+        position: relative;
+        bottom: 10px;
+        z-index: 1;
+        border-radius: 0px 0px 5px 5px;
+        padding: 20px 20px 10px 20px;
+        background-color: #f0f0f0;
+        font-size: 20px;
+        color: $primair-color;
+    }
+} */
+
+.faq {
+    margin: 0 auto;
+    max-width: 1023px;
+    margin-top: 38px;
+    cursor: pointer;
+
+    .question {
+        border-radius: 5px;
+        background-color: $primair-color;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: default;
+        position: relative;
+        z-index: 2;
+        padding-right: 15px;
+
+        h3 {
+            color: white;
+            padding: 10px 15px 10px 15px;
+            font-size: 24px;
+            font-weight: 500;
+        }
+        svg {
+            cursor: pointer;
+            transition: transform 0.5s ease-in;
+            margin: 0;
+        }
+    }
+    .reponse {
+        max-height: 0;
+        height: 0%;
+        overflow: hidden;
+        transition: max-height 1s ease;
+        position: relative;
+        bottom: 5px;
+        border-radius: 0px 0px 5px 5px;
+        background-color: #f0f0f0;
+        font-size: 20px;
+        color: $primair-color;
+
+        p {
+            padding: 15px;
+            color: $primair-color;
+        }
+    }
+    &.active .reponse {
+        max-height: 300px;
+        animation: fadeIn 1s ease-in;
+
+    }
+    &.active svg {
+        transform: rotate(-180deg);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+        height: -100px;
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        height: 100%;
     }
 }
