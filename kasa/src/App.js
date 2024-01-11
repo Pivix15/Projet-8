@@ -13,10 +13,9 @@ function App() {
             <Route index element={<Home />}/>
             <Route path='/home' element={<Home />}/>
             <Route path='/propos' element={<APropos />}/>
-            <Route path='/logements' element={<Logements />}/>
+            <Route path='/logements/:id' element={<Logements />}/>
             <Route path='*' element={<Error />}/>
           </Route>
-          
         </Routes>
       </BrowserRouter>
     </div>
