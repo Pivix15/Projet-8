@@ -28,7 +28,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 45px 100px 50px 100px;
+  margin: 45px 100px 0px 100px;
 }
 
 .navbar ul {
@@ -48,6 +48,7 @@
 .hbanner {
   display: flex;
   justify-content: center;
+  margin-top: 50px;
 }
 .hbanner .banner {
   width: 100%;
@@ -81,6 +82,59 @@
   color: white;
 }
 
+.card-article {
+  margin: 43px 100px 50px 100px;
+  background-color: #F6F6F6;
+  border-radius: 25px;
+  padding-top: 56px;
+  padding-bottom: 50px;
+}
+.card-article__contenair {
+  display: flex;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+  row-gap: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card-article .card {
+  position: relative;
+  overflow: hidden;
+}
+.card-article .card__navg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.card-article .card__navg::before {
+  content: "";
+  position: absolute;
+  border-radius: 10px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+  z-index: 1;
+}
+.card-article .card__text {
+  bottom: 20px;
+  margin-left: 20px;
+  position: absolute;
+  width: 300px;
+  color: white;
+  font-size: 18px;
+  z-index: 2;
+}
+.card-article .card img {
+  width: 440px;
+  height: 440px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+
 .error {
   display: flex;
   flex-direction: column;
@@ -104,4 +158,31 @@
   font-size: 18px;
   color: #FF6060;
   text-decoration: underline;
+}
+
+.pbanner {
+  display: flex;
+  justify-content: center;
+  margin-top: 38px;
+}
+.pbanner .banner {
+  width: 100%;
+  margin-left: 100px;
+  margin-right: 100px;
+  position: relative;
+}
+.pbanner .banner::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 25px;
+}
+.pbanner .banner__img2 {
+  width: 100%;
+  height: 223px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 25px;
 }/*# sourceMappingURL=style.css.map */
