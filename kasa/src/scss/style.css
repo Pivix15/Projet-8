@@ -461,11 +461,13 @@
   position: absolute;
   top: 45%;
   left: 26.36px;
+  cursor: pointer;
 }
 .carousel .arrow-right {
   position: absolute;
   top: 45%;
   right: 26.36px;
+  cursor: pointer;
 }
 .carousel span {
   position: absolute;
