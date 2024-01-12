@@ -294,4 +294,152 @@
     transform: translateY(0);
     height: 100%;
   }
+}
+.notes {
+  fill: #E3E3E3;
+  display: flex;
+  gap: 10px;
+}
+.notes .c-etoile svg {
+  fill: #FF6060;
+}
+
+.l-faq {
+  display: flex;
+  justify-content: space-between;
+  gap: 76px;
+}
+.l-faq .l--faq {
+  max-width: 1023px;
+  margin-top: 38px;
+  cursor: pointer;
+  width: 100%;
+}
+.l-faq .l--faq .l-question {
+  border-radius: 5px;
+  background-color: #FF6060;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: default;
+  position: relative;
+  z-index: 2;
+  padding-right: 15px;
+}
+.l-faq .l--faq .l-question h3 {
+  color: white;
+  padding: 10px 15px 10px 15px;
+  font-size: 24px;
+  font-weight: 500;
+}
+.l-faq .l--faq .l-question svg {
+  cursor: pointer;
+  transition: transform 0.5s ease-in;
+  margin: 0;
+}
+.l-faq .l--faq .l-reponse {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  position: relative;
+  bottom: 5px;
+  border-radius: 0px 0px 5px 5px;
+  background-color: #f0f0f0;
+  font-size: 20px;
+  color: #FF6060;
+  cursor: default;
+}
+.l-faq .l--faq .l-reponse p {
+  margin-top: 20px;
+  padding: 15px;
+  color: #FF6060;
+}
+.l-faq .l--faq .l-reponse p li {
+  color: #FF6060;
+  margin-bottom: 5px;
+}
+.l-faq .l--faq.active .l-reponse {
+  max-height: 300px;
+  animation: fadeIn 0.6s ease-out;
+}
+.l-faq .l--faq.active .l-reponse p {
+  max-height: 300px;
+  animation: TexteHeight 1.4s ease-out;
+}
+.l-faq .l--faq.active svg {
+  transform: rotate(-180deg);
+}
+@keyframes TexteHeight {
+  from {
+    max-height: 0%;
+    transform: translateY(-100%);
+  }
+  to {
+    max-height: 100%;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeIn {
+  from {
+    max-height: 0%;
+  }
+  to {
+    max-height: 100%;
+  }
+}
+
+.info-logement {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.info-logement_head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.info-logement_head__title h1 {
+  color: #FF6060;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 142.6%;
+}
+.info-logement_head__title p {
+  color: #FF6060;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26.67px;
+}
+.info-logement_head__profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.info-logement_head__profile p {
+  color: #FF6060;
+  font-size: 18px;
+  text-align: right;
+  max-width: 93px;
+}
+.info-logement_head__profile img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+.info-logement_cachalot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.info-logement_cachalot__category ul {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.info-logement_cachalot__category ul li {
+  color: white;
+  background-color: #FF6060;
+  border-radius: 10px;
+  padding: 4px 30px;
 }/*# sourceMappingURL=style.css.map */

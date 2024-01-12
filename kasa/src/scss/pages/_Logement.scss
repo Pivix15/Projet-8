@@ -1,0 +1,174 @@
+// Etoiles
+.notes {
+    fill: #E3E3E3;
+    display: flex;
+    gap: 10px;
+    .c-etoile svg {
+        fill: $primair-color;
+    }
+}
+
+// FAQ
+.l-faq {
+    display: flex;
+    justify-content: space-between;
+    gap: 76px;
+
+    .l--faq {
+        max-width: 1023px;
+        margin-top: 38px;
+        cursor: pointer;
+        width: 100%;
+
+
+        .l-question {
+            border-radius: 5px;
+            background-color: $primair-color;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: default;
+            position: relative;
+            z-index: 2;
+            padding-right: 15px;
+
+            h3 {
+                color: white;
+                padding: 10px 15px 10px 15px;
+                font-size: 24px;
+                font-weight: 500;
+            }
+
+            svg {
+                cursor: pointer;
+                transition: transform 0.5s ease-in;
+                margin: 0;
+            }
+        }
+
+        .l-reponse {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            position: relative;
+            bottom: 5px;
+            border-radius: 0px 0px 5px 5px;
+            background-color: #f0f0f0;
+            font-size: 20px;
+            color: $primair-color;
+            cursor: default;
+
+            p {
+                margin-top: 20px;
+                padding: 15px;
+                color: $primair-color;
+
+                li {
+                    color: $primair-color;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+
+        &.active .l-reponse {
+            max-height: 300px;
+            animation: fadeIn 0.6s ease-out;
+        }
+
+        &.active .l-reponse p {
+            max-height: 300px;
+            animation: TexteHeight 1.4s ease-out;
+        }
+
+        &.active svg {
+            transform: rotate(-180deg);
+        }
+    }
+
+    @keyframes TexteHeight {
+        from {
+            max-height: 0%;
+            transform: translateY(-100%);
+        }
+
+        to {
+            max-height: 100%;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes fadeIn {
+        from {
+            max-height: 0%;
+        }
+
+        to {
+            max-height: 100%;
+        }
+    }
+}
+
+// Info Logements
+.info-logement {
+    margin-left: 100px;
+    margin-right: 100px;
+
+    &_head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__title {
+            h1 {
+                color: $primair-color;
+                font-size: 36px;
+                font-weight: 500;
+                line-height: 142.6%;
+            }
+    
+            p {
+                color: $primair-color;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 26.67px;
+            }
+        }
+        &__profile {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+            p {
+                color: $primair-color;
+                font-size: 18px;
+                text-align: right;
+                max-width: 93px;
+            }
+            img {
+                width: 64px;
+                height: 64px;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    &_cachalot {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+        &__category ul{
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            li {
+                color: $white;
+                background-color: $primair-color;
+                border-radius: 10px;
+                padding: 4px 30px;
+            }
+        }
+    }
+
+    
+    
+}
