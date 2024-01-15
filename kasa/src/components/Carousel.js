@@ -34,7 +34,7 @@ const Carousel = ({ pictures }) => {
 					<span>{currentSlide + 1}/{pictures.length}</span>
 				</>
 			)}
-			<img src={pictures[currentSlide]} alt="Photo" />
+			<img src={pictures[currentSlide]} alt="logement" />
 		</section>
 	);
 };
