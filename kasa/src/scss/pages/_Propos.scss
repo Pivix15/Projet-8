@@ -1,7 +1,8 @@
 .pbanner {
     display: flex;
     justify-content: center;
-    margin-top: 38px;
+    max-width: 1240px;
+    margin: 38px auto;
 
     .banner {
         @include banner;

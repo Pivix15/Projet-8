@@ -14,9 +14,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  max-width: none;
 }
 .footer div {
   text-align: center;
+  max-width: none;
 }
 .footer div p {
   margin-top: 29px;
@@ -28,7 +30,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 45px 100px 0px 100px;
+  margin: 45px auto;
+  max-width: 1240px;
 }
 
 .navbar ul {
@@ -48,12 +51,11 @@
 .hbanner {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  margin: 50px auto;
+  max-width: 1240px;
 }
 .hbanner .banner {
   width: 100%;
-  margin-left: 100px;
-  margin-right: 100px;
   position: relative;
 }
 .hbanner .banner::before {
@@ -76,14 +78,15 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 48px;
+  font-size: 47px;
 }
 .hbanner .banner__text p {
   color: white;
 }
 
 .card-article {
-  margin: 43px 100px 50px 100px;
+  max-width: 1240px;
+  margin: 43px auto 50px;
   background-color: #F6F6F6;
   border-radius: 25px;
   padding-top: 56px;
@@ -128,8 +131,8 @@
   z-index: 2;
 }
 .card-article .card img {
-  width: 440px;
-  height: 440px;
+  width: 340px;
+  height: 340px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
@@ -163,12 +166,11 @@
 .pbanner {
   display: flex;
   justify-content: center;
-  margin-top: 38px;
+  max-width: 1240px;
+  margin: 38px auto;
 }
 .pbanner .banner {
   width: 100%;
-  margin-left: 100px;
-  margin-right: 100px;
   position: relative;
 }
 .pbanner .banner::before {
@@ -355,8 +357,8 @@
 }
 
 .info-logement {
-  margin-left: 100px;
-  margin-right: 100px;
+  max-width: 1240px;
+  margin: 0 auto;
 }
 .info-logement_head {
   display: flex;
@@ -413,8 +415,9 @@
 .carousel {
   display: flex;
   justify-content: center;
-  margin: 50px 100px 30px 100px;
   position: relative;
+  max-width: 1240px;
+  margin: 50px auto 30px;
 }
 .carousel img {
   width: 100%;

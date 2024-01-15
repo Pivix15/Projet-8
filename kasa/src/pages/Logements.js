@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useParams, Navigate } from 'react-router-dom';
 import logements from '@/components/logements.json';
 import Etoiles from '@/components/Etoiles';
