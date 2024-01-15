@@ -7,6 +7,10 @@
   padding: 0;
 }
 
+.n-active {
+  text-decoration: underline;
+}
+
 .footer {
   background-color: #000;
   margin-top: 50px;
@@ -26,6 +30,17 @@
   color: white;
 }
 
+@media screen and (max-width: 768px) {
+  .footer {
+    margin-top: 20px;
+    height: 221px;
+  }
+  .footer div p {
+    font-size: 12px;
+    width: 133.594px;
+    margin: 29px auto 0px;
+  }
+}
 .header {
   display: flex;
   align-items: center;
@@ -44,10 +59,21 @@
   color: #FF6060;
 }
 
-.highlighted {
-  text-decoration: underline;
+@media screen and (max-width: 768px) {
+  .header {
+    max-width: 335px;
+    margin: 20px auto;
+  }
+  .header img {
+    width: 145px;
+    height: 46.88px;
+  }
+  .navbar ul {
+    gap: 26px;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
 }
-
 .hbanner {
   display: flex;
   justify-content: center;
@@ -62,9 +88,12 @@
   content: "";
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 96%;
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 25px;
+}
+.hbanner .banner::before {
+  height: 98%;
 }
 .hbanner .banner__img1 {
   width: 100%;
@@ -88,7 +117,6 @@
   max-width: 1240px;
   margin: 43px auto 50px;
   background-color: #F6F6F6;
-  border-radius: 25px;
   padding-top: 56px;
   padding-bottom: 50px;
 }
@@ -117,7 +145,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 99%;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
   z-index: 1;
 }
@@ -138,6 +166,61 @@
   border-radius: 10px;
 }
 
+@media screen and (max-width: 768px) {
+  .hbanner {
+    margin: 27px 20px 0px 20px;
+    max-width: none;
+  }
+  .hbanner .banner::before {
+    border-radius: 10px;
+    height: 97%;
+  }
+  .hbanner .banner__img1 {
+    height: 111px;
+    border-radius: 10px;
+  }
+  .hbanner .banner__text {
+    left: 110px;
+  }
+  .hbanner .banner__text p {
+    color: white;
+    font-size: 24px;
+    width: 192px;
+  }
+  .card-article {
+    max-width: none;
+    margin: 22px auto 27px;
+    background-color: initial;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .card-article__contenair {
+    row-gap: 20px;
+  }
+  .card-article .card {
+    position: relative;
+    overflow: hidden;
+  }
+  .card-article .card__navg {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .card-article .card__navg::before {
+    height: 98%;
+  }
+  .card-article .card__text {
+    bottom: 15px;
+    margin-left: 20px;
+    width: 295px;
+    font-size: 18px;
+  }
+  .card-article .card img {
+    width: 335px;
+    height: 255px;
+    border-radius: 10px;
+  }
+}
 .error {
   display: flex;
   flex-direction: column;
@@ -163,6 +246,25 @@
   text-decoration: underline;
 }
 
+@media screen and (max-width: 768px) {
+  .error {
+    gap: 113px;
+    margin-top: 139px;
+    margin-bottom: 139px;
+  }
+  .error > p {
+    font-size: 96px;
+  }
+  .error > div p {
+    font-size: 18px;
+    text-align: center;
+    max-width: 260px;
+    line-height: 142.6%;
+  }
+  .error div a {
+    font-size: 14px;
+  }
+}
 .pbanner {
   display: flex;
   justify-content: center;
@@ -177,7 +279,7 @@
   content: "";
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 96%;
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 25px;
 }
@@ -233,11 +335,11 @@
   color: #FF6060;
 }
 .faq.active .reponse {
-  max-height: 300px;
+  max-height: 400px;
   animation: fadeIn 0.6s ease-in;
 }
 .faq.active .reponse p {
-  max-height: 300px;
+  max-height: 400px;
   animation: TexteHeight 1.4s ease-out;
 }
 .faq.active svg {
@@ -262,6 +364,39 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .pbanner {
+    max-width: none;
+    margin: 19px 20px 0px 20px;
+  }
+  .pbanner .banner::before {
+    border-radius: 10px;
+  }
+  .pbanner .banner__img2 {
+    height: 111px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 10px;
+  }
+  .faq {
+    max-width: none;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  .faq .question h3 {
+    padding: 10px 15px 10px 15px;
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .faq .question svg {
+    height: 18px;
+    width: 18px;
+  }
+  .faq .reponse {
+    font-size: 13px;
+  }
+}
 .notes {
   fill: #E3E3E3;
   display: flex;
@@ -294,10 +429,14 @@
   max-width: 1240px;
   margin: 0 auto;
 }
-.info-logement_head {
+.info-logement > div {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+}
+.info-logement_head {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .info-logement_head__title h1 {
   color: #FF6060;
@@ -330,14 +469,15 @@
 }
 .info-logement_cachalot {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin-top: 20px;
 }
 .info-logement_cachalot__category ul {
   display: flex;
   flex-direction: row;
   gap: 10px;
+  margin-top: 20px;
 }
 .info-logement_cachalot__category ul li {
   color: white;
@@ -380,4 +520,84 @@
   font-size: 18px;
   font-weight: 500;
   color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .info-logement {
+    margin: 0px 20px 0px 20px;
+  }
+  .info-logement > div {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .info-logement_head {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .info-logement_head__title h1 {
+    font-size: 18px;
+  }
+  .info-logement_head__title p {
+    font-size: 14px;
+    line-height: 19.964px;
+    margin-top: 5px;
+  }
+  .info-logement_head__profile p {
+    font-size: 12px;
+  }
+  .info-logement_head__profile img {
+    width: 32px;
+    height: 32px;
+  }
+  .info-logement_cachalot {
+    flex-direction: row-reverse;
+    margin-top: 16px;
+  }
+  .info-logement_cachalot__category ul {
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .info-logement_cachalot__category ul li {
+    padding: 2px 20px;
+    font-size: 10px;
+  }
+  .notes {
+    gap: 5px;
+  }
+  .notes span svg {
+    height: 14px;
+    width: 14px;
+  }
+  .carousel {
+    margin: 27px 20px 15px 20px;
+  }
+  .carousel img {
+    height: 255px;
+    border-radius: 10px;
+  }
+  .carousel .arrow-left {
+    left: 10px;
+    width: 24px;
+    height: 24px;
+  }
+  .carousel .arrow-right {
+    right: 10px;
+    width: 24px;
+    height: 24px;
+  }
+  .carousel span {
+    display: none;
+  }
+  .l-faq {
+    gap: 20px;
+    margin-top: 20px;
+  }
+  .l-faq .faq {
+    margin: 0 auto;
+  }
+  .l-faq .faq p {
+    margin-top: 5px;
+  }
 }/*# sourceMappingURL=style.css.map */

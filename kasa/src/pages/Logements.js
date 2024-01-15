@@ -17,31 +17,33 @@ const Logements = () => {
     //global return
     return (
         <div>
-            <Carousel pictures={logement.pictures}/>
+            <Carousel pictures={logement.pictures} />
             <section className='info-logement'>
-                <div className='info-logement_head'>
-                    <div className='info-logement_head__title'>
-                        <h1>{logement.title}</h1>
-                        <p>{logement.location}</p>
+                <div>
+                    <div className='info-logement_head'>
+                        <div className='info-logement_head__title'>
+                            <h1>{logement.title}</h1>
+                            <p>{logement.location}</p>
+                        </div>
+                        <div className='info-logement_cachalot__category'>
+                            <ul>
+                                {logement.tags.map((tag, index) => (
+                                    <li key={index}>{tag}</li>
+                                ))}
+                            </ul>
+                        </div>
                     </div>
-                    <div className='info-logement_head__profile'>
-                        <p>{logement.host.name}</p>
-                        <img src={logement.host.picture} alt="profile" />
-                    </div>
-                </div>
-                <div className='info-logement_cachalot'>
-                    <div className='info-logement_cachalot__category'>
-                        <ul>
-                            {logement.tags.map((tag, index) => (
-                                <li key={index}>{tag}</li>
-                            ))}
-                        </ul>
-                    </div>
-                    <div className='info-logement_cachalot__notes'>
-                        <Etoiles rating={logement.rating} />
-                    </div>
-                </div>
+                    <div className='info-logement_cachalot'>
+                        <div className='info-logement_head__profile'>
+                            <p>{logement.host.name}</p>
+                            <img src={logement.host.picture} alt="profile" />
+                        </div>
 
+                        <div className='info-logement_cachalot__notes'>
+                            <Etoiles rating={logement.rating} />
+                        </div>
+                    </div>
+                </div>
                 <div className='l-faq'>
                     <DropDownInformations question="Description" reponse={logement.description} />
                     <DropDownInformations question="Équipements"

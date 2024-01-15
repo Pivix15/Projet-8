@@ -22,3 +22,24 @@
         text-decoration: underline;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .error {
+        gap: 113px;
+        margin-top: 139px;
+        margin-bottom: 139px;
+
+        > p {
+            font-size: 96px;
+        }
+        > div p {
+            font-size: 18px;
+            text-align: center;
+            max-width: 260px;
+            line-height: 142.6%;
+        }
+        div a {
+            font-size: 14px;
+        }
+    }
+}

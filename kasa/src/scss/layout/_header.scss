@@ -18,6 +18,22 @@
     }
 }
 
-.highlighted {
-    text-decoration: underline;
+@media screen and (max-width: 768px) {
+    .header {
+        max-width: 335px;
+        margin: 20px auto;
+
+
+        img {
+            width: 145px;
+            height: 46.88px;
+        }
+    }
+    .navbar {
+        ul {
+            gap: 26px;
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+    }
 }

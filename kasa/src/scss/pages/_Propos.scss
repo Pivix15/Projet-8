@@ -25,3 +25,47 @@
 
     @include dropdown;
 }
+
+
+@media screen and (max-width: 768px) {
+    .pbanner {
+        max-width: none;
+        margin: 19px 20px 0px 20px;
+
+        .banner {
+            &::before {
+                border-radius: 10px;
+            }
+        }
+
+        .banner__img2 {
+            height: 111px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    }
+
+    .faq {
+        max-width: none;
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-top: 20px;
+
+        .question {
+            h3 {
+                padding: 10px 15px 10px 15px;
+                font-size: 13px;
+                font-weight: 500;
+            }
+
+            svg {
+                height: 18px;
+                width: 18px;
+            }
+        }
+
+        .reponse {
+            font-size: 13px;
+        }
+    }
+}

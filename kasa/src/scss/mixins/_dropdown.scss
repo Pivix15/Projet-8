@@ -42,12 +42,12 @@
     }
 
     &.active .reponse {
-        max-height: 300px;
+        max-height: 400px;
         animation: fadeIn 0.6s ease-in;
     }
 
     &.active .reponse p {
-        max-height: 300px;
+        max-height: 400px;
         animation: TexteHeight 1.4s ease-out;
     }
 
