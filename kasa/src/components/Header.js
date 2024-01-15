@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import LogoKasa from '@/logo.svg'
 
 const Header = () => {
@@ -10,8 +10,8 @@ const Header = () => {
             </div>
             <nav className='navbar'>
                 <ul>
-                    <li><Link to="/home">Accueil</Link></li>
-                    <li><Link to="/propos">A Propos</Link></li>
+                    <li><NavLink to="/home" className={({isActive}) => isActive ? 'active' : ''}>Accueil</NavLink></li>
+                    <li><NavLink to="/propos" className={({isActive}) => isActive ? 'active' : ''}>A Propos</NavLink></li>
                 </ul>
             </nav>
         </header>
