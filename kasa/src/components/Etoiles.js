@@ -1,7 +1,8 @@
 import React from 'react';
 
+// rating = note
 const Etoiles = ({ rating }) => {
-    const numberOfStars = parseInt(rating, 6);
+    const numberOfStars = parseInt(rating);
 
     const etoiles = Array.from({ length: 5 }, (_, index) => (
         <span key={index} className={index < numberOfStars ? 'c-etoile' : ''}>
